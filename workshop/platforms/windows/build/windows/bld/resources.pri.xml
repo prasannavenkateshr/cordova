@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="com.example.workshop" version="1.0" primary="true">
+		<Qualifiers>
+			<Scale>100</Scale>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="config.xml" uri="ms-resource://com.example.workshop/Files/config.xml">
+				<Candidate type="Path">
+					<Value>config.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="images">
+				<NamedResource name="SplashScreen.png" uri="ms-resource://com.example.workshop/Files/images/SplashScreen.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\SplashScreen.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square150x150Logo.png" uri="ms-resource://com.example.workshop/Files/images/Square150x150Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Square150x150Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square30x30Logo.png" uri="ms-resource://com.example.workshop/Files/images/Square30x30Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Square30x30Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square310x310Logo.png" uri="ms-resource://com.example.workshop/Files/images/Square310x310Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Square310x310Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square44x44Logo.png" uri="ms-resource://com.example.workshop/Files/images/Square44x44Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Square44x44Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square70x70Logo.png" uri="ms-resource://com.example.workshop/Files/images/Square70x70Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Square70x70Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square71x71Logo.png" uri="ms-resource://com.example.workshop/Files/images/Square71x71Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Square71x71Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://com.example.workshop/Files/images/StoreLogo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\StoreLogo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://com.example.workshop/Files/images/Wide310x150Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Wide310x150Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="www">
+				<NamedResource name="cordova.js" uri="ms-resource://com.example.workshop/Files/www/cordova.js">
+					<Candidate type="Path">
+						<Value>www\cordova.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="cordova_plugins.js" uri="ms-resource://com.example.workshop/Files/www/cordova_plugins.js">
+					<Candidate type="Path">
+						<Value>www\cordova_plugins.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="index.html" uri="ms-resource://com.example.workshop/Files/www/index.html">
+					<Candidate type="Path">
+						<Value>www\index.html</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="assets">
+					<ResourceMapSubtree name="css">
+						<NamedResource name="pageslider.css" uri="ms-resource://com.example.workshop/Files/www/assets/css/pageslider.css">
+							<Candidate type="Path">
+								<Value>www\assets\css\pageslider.css</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="styles.css" uri="ms-resource://com.example.workshop/Files/www/assets/css/styles.css">
+							<Candidate type="Path">
+								<Value>www\assets\css\styles.css</Value>
+							</Candidate>
+						</NamedResource>
+						<ResourceMapSubtree name="images">
+							<NamedResource name="ic_action_add.png" uri="ms-resource://com.example.workshop/Files/www/assets/css/images/ic_action_add.png">
+								<Candidate type="Path">
+									<Value>www\assets\css\images\ic_action_add.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="ic_action_arrow_left.png" uri="ms-resource://com.example.workshop/Files/www/assets/css/images/ic_action_arrow_left.png">
+								<Candidate type="Path">
+									<Value>www\assets\css\images\ic_action_arrow_left.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="ic_action_book.png" uri="ms-resource://com.example.workshop/Files/www/assets/css/images/ic_action_book.png">
+								<Candidate type="Path">
+									<Value>www\assets\css\images\ic_action_book.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="ic_action_bookmark.png" uri="ms-resource://com.example.workshop/Files/www/assets/css/images/ic_action_bookmark.png">
+								<Candidate type="Path">
+									<Value>www\assets\css\images\ic_action_bookmark.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="ic_action_dialog.png" uri="ms-resource://com.example.workshop/Files/www/assets/css/images/ic_action_dialog.png">
+								<Candidate type="Path">
+									<Value>www\assets\css\images\ic_action_dialog.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="ic_action_download.png" uri="ms-resource://com.example.workshop/Files/www/assets/css/images/ic_action_download.png">
+								<Candidate type="Path">
+									<Value>www\assets\css\images\ic_action_download.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="ic_action_goleft.png" uri="ms-resource://com.example.workshop/Files/www/assets/css/images/ic_action_goleft.png">
+								<Candidate type="Path">
+									<Value>www\assets\css\images\ic_action_goleft.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="ic_action_location.png" uri="ms-resource://com.example.workshop/Files/www/assets/css/images/ic_action_location.png">
+								<Candidate type="Path">
+									<Value>www\assets\css\images\ic_action_location.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="ic_action_mail.png" uri="ms-resource://com.example.workshop/Files/www/assets/css/images/ic_action_mail.png">
+								<Candidate type="Path">
+									<Value>www\assets\css\images\ic_action_mail.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="ic_action_monolog.png" uri="ms-resource://com.example.workshop/Files/www/assets/css/images/ic_action_monolog.png">
+								<Candidate type="Path">
+									<Value>www\assets\css\images\ic_action_monolog.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="ic_action_phone_outgoing.png" uri="ms-resource://com.example.workshop/Files/www/assets/css/images/ic_action_phone_outgoing.png">
+								<Candidate type="Path">
+									<Value>www\assets\css\images\ic_action_phone_outgoing.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="ic_action_search.png" uri="ms-resource://com.example.workshop/Files/www/assets/css/images/ic_action_search.png">
+								<Candidate type="Path">
+									<Value>www\assets\css\images\ic_action_search.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="ic_action_user.png" uri="ms-resource://com.example.workshop/Files/www/assets/css/images/ic_action_user.png">
+								<Candidate type="Path">
+									<Value>www\assets\css\images\ic_action_user.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="ic_action_users.png" uri="ms-resource://com.example.workshop/Files/www/assets/css/images/ic_action_users.png">
+								<Candidate type="Path">
+									<Value>www\assets\css\images\ic_action_users.png</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="pics">
+						<NamedResource name="Amy_Jones.jpg" uri="ms-resource://com.example.workshop/Files/www/assets/pics/Amy_Jones.jpg">
+							<Candidate type="Path">
+								<Value>www\assets\pics\Amy_Jones.jpg</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Amy_Jones50.jpg" uri="ms-resource://com.example.workshop/Files/www/assets/pics/Amy_Jones50.jpg">
+							<Candidate type="Path">
+								<Value>www\assets\pics\Amy_Jones50.jpg</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Eugene_Lee.jpg" uri="ms-resource://com.example.workshop/Files/www/assets/pics/Eugene_Lee.jpg">
+							<Candidate type="Path">
+								<Value>www\assets\pics\Eugene_Lee.jpg</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Eugene_Lee50.jpg" uri="ms-resource://com.example.workshop/Files/www/assets/pics/Eugene_Lee50.jpg">
+							<Candidate type="Path">
+								<Value>www\assets\pics\Eugene_Lee50.jpg</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Gary_Donovan.jpg" uri="ms-resource://com.example.workshop/Files/www/assets/pics/Gary_Donovan.jpg">
+							<Candidate type="Path">
+								<Value>www\assets\pics\Gary_Donovan.jpg</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Gary_Donovan50.jpg" uri="ms-resource://com.example.workshop/Files/www/assets/pics/Gary_Donovan50.jpg">
+							<Candidate type="Path">
+								<Value>www\assets\pics\Gary_Donovan50.jpg</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="James_King.jpg" uri="ms-resource://com.example.workshop/Files/www/assets/pics/James_King.jpg">
+							<Candidate type="Path">
+								<Value>www\assets\pics\James_King.jpg</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="James_King50.jpg" uri="ms-resource://com.example.workshop/Files/www/assets/pics/James_King50.jpg">
+							<Candidate type="Path">
+								<Value>www\assets\pics\James_King50.jpg</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="John_Williams.jpg" uri="ms-resource://com.example.workshop/Files/www/assets/pics/John_Williams.jpg">
+							<Candidate type="Path">
+								<Value>www\assets\pics\John_Williams.jpg</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="John_Williams50.jpg" uri="ms-resource://com.example.workshop/Files/www/assets/pics/John_Williams50.jpg">
+							<Candidate type="Path">
+								<Value>www\assets\pics\John_Williams50.jpg</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Julie_Taylor.jpg" uri="ms-resource://com.example.workshop/Files/www/assets/pics/Julie_Taylor.jpg">
+							<Candidate type="Path">
+								<Value>www\assets\pics\Julie_Taylor.jpg</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Julie_Taylor50.jpg" uri="ms-resource://com.example.workshop/Files/www/assets/pics/Julie_Taylor50.jpg">
+							<Candidate type="Path">
+								<Value>www\assets\pics\Julie_Taylor50.jpg</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Kathleen_Byrne.jpg" uri="ms-resource://com.example.workshop/Files/www/assets/pics/Kathleen_Byrne.jpg">
+							<Candidate type="Path">
+								<Value>www\assets\pics\Kathleen_Byrne.jpg</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Kathleen_Byrne50.jpg" uri="ms-resource://com.example.workshop/Files/www/assets/pics/Kathleen_Byrne50.jpg">
+							<Candidate type="Path">
+								<Value>www\assets\pics\Kathleen_Byrne50.jpg</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Lisa_Wong.jpg" uri="ms-resource://com.example.workshop/Files/www/assets/pics/Lisa_Wong.jpg">
+							<Candidate type="Path">
+								<Value>www\assets\pics\Lisa_Wong.jpg</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Lisa_Wong50.jpg" uri="ms-resource://com.example.workshop/Files/www/assets/pics/Lisa_Wong50.jpg">
+							<Candidate type="Path">
+								<Value>www\assets\pics\Lisa_Wong50.jpg</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Paula_Gates.jpg" uri="ms-resource://com.example.workshop/Files/www/assets/pics/Paula_Gates.jpg">
+							<Candidate type="Path">
+								<Value>www\assets\pics\Paula_Gates.jpg</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Paula_Gates50.jpg" uri="ms-resource://com.example.workshop/Files/www/assets/pics/Paula_Gates50.jpg">
+							<Candidate type="Path">
+								<Value>www\assets\pics\Paula_Gates50.jpg</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Paul_Jones.jpg" uri="ms-resource://com.example.workshop/Files/www/assets/pics/Paul_Jones.jpg">
+							<Candidate type="Path">
+								<Value>www\assets\pics\Paul_Jones.jpg</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Paul_Jones50.jpg" uri="ms-resource://com.example.workshop/Files/www/assets/pics/Paul_Jones50.jpg">
+							<Candidate type="Path">
+								<Value>www\assets\pics\Paul_Jones50.jpg</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Ray_Moore.jpg" uri="ms-resource://com.example.workshop/Files/www/assets/pics/Ray_Moore.jpg">
+							<Candidate type="Path">
+								<Value>www\assets\pics\Ray_Moore.jpg</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Ray_Moore50.jpg" uri="ms-resource://com.example.workshop/Files/www/assets/pics/Ray_Moore50.jpg">
+							<Candidate type="Path">
+								<Value>www\assets\pics\Ray_Moore50.jpg</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Steven_Wells.jpg" uri="ms-resource://com.example.workshop/Files/www/assets/pics/Steven_Wells.jpg">
+							<Candidate type="Path">
+								<Value>www\assets\pics\Steven_Wells.jpg</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Steven_Wells50.jpg" uri="ms-resource://com.example.workshop/Files/www/assets/pics/Steven_Wells50.jpg">
+							<Candidate type="Path">
+								<Value>www\assets\pics\Steven_Wells50.jpg</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="ratchet">
+						<ResourceMapSubtree name="css">
+							<NamedResource name="ratchet-theme-android.css" uri="ms-resource://com.example.workshop/Files/www/assets/ratchet/css/ratchet-theme-android.css">
+								<Candidate type="Path">
+									<Value>www\assets\ratchet\css\ratchet-theme-android.css</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="ratchet-theme-android.min.css" uri="ms-resource://com.example.workshop/Files/www/assets/ratchet/css/ratchet-theme-android.min.css">
+								<Candidate type="Path">
+									<Value>www\assets\ratchet\css\ratchet-theme-android.min.css</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="ratchet-theme-ios.css" uri="ms-resource://com.example.workshop/Files/www/assets/ratchet/css/ratchet-theme-ios.css">
+								<Candidate type="Path">
+									<Value>www\assets\ratchet\css\ratchet-theme-ios.css</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="ratchet-theme-ios.min.css" uri="ms-resource://com.example.workshop/Files/www/assets/ratchet/css/ratchet-theme-ios.min.css">
+								<Candidate type="Path">
+									<Value>www\assets\ratchet\css\ratchet-theme-ios.min.css</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="ratchet.css" uri="ms-resource://com.example.workshop/Files/www/assets/ratchet/css/ratchet.css">
+								<Candidate type="Path">
+									<Value>www\assets\ratchet\css\ratchet.css</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="ratchet.min.css" uri="ms-resource://com.example.workshop/Files/www/assets/ratchet/css/ratchet.min.css">
+								<Candidate type="Path">
+									<Value>www\assets\ratchet\css\ratchet.min.css</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="fonts">
+							<NamedResource name="ratchicons.eot" uri="ms-resource://com.example.workshop/Files/www/assets/ratchet/fonts/ratchicons.eot">
+								<Candidate type="Path">
+									<Value>www\assets\ratchet\fonts\ratchicons.eot</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="ratchicons.svg" uri="ms-resource://com.example.workshop/Files/www/assets/ratchet/fonts/ratchicons.svg">
+								<Candidate type="Path">
+									<Value>www\assets\ratchet\fonts\ratchicons.svg</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="ratchicons.ttf" uri="ms-resource://com.example.workshop/Files/www/assets/ratchet/fonts/ratchicons.ttf">
+								<Candidate type="Path">
+									<Value>www\assets\ratchet\fonts\ratchicons.ttf</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="ratchicons.woff" uri="ms-resource://com.example.workshop/Files/www/assets/ratchet/fonts/ratchicons.woff">
+								<Candidate type="Path">
+									<Value>www\assets\ratchet\fonts\ratchicons.woff</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="cordova-js-src">
+					<NamedResource name="exec.js" uri="ms-resource://com.example.workshop/Files/www/cordova-js-src/exec.js">
+						<Candidate type="Path">
+							<Value>www\cordova-js-src\exec.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="platform.js" uri="ms-resource://com.example.workshop/Files/www/cordova-js-src/platform.js">
+						<Candidate type="Path">
+							<Value>www\cordova-js-src\platform.js</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="js">
+					<NamedResource name="app.js" uri="ms-resource://com.example.workshop/Files/www/js/app.js">
+						<Candidate type="Path">
+							<Value>www\js\app.js</Value>
+						</Candidate>
+					</NamedResource>
+					<ResourceMapSubtree name="services">
+						<ResourceMapSubtree name="json">
+							<NamedResource name="EmployeeService.js" uri="ms-resource://com.example.workshop/Files/www/js/services/json/EmployeeService.js">
+								<Candidate type="Path">
+									<Value>www\js\services\json\EmployeeService.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="localstorage">
+							<NamedResource name="EmployeeService.js" uri="ms-resource://com.example.workshop/Files/www/js/services/localstorage/EmployeeService.js">
+								<Candidate type="Path">
+									<Value>www\js\services\localstorage\EmployeeService.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="memory">
+							<NamedResource name="EmployeeService.js" uri="ms-resource://com.example.workshop/Files/www/js/services/memory/EmployeeService.js">
+								<Candidate type="Path">
+									<Value>www\js\services\memory\EmployeeService.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="websql">
+							<NamedResource name="EmployeeService.js" uri="ms-resource://com.example.workshop/Files/www/js/services/websql/EmployeeService.js">
+								<Candidate type="Path">
+									<Value>www\js\services\websql\EmployeeService.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="lib">
+					<NamedResource name="fastclick.js" uri="ms-resource://com.example.workshop/Files/www/lib/fastclick.js">
+						<Candidate type="Path">
+							<Value>www\lib\fastclick.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="handlebars.js" uri="ms-resource://com.example.workshop/Files/www/lib/handlebars.js">
+						<Candidate type="Path">
+							<Value>www\lib\handlebars.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="jquery.js" uri="ms-resource://com.example.workshop/Files/www/lib/jquery.js">
+						<Candidate type="Path">
+							<Value>www\lib\jquery.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="pageslider.js" uri="ms-resource://com.example.workshop/Files/www/lib/pageslider.js">
+						<Candidate type="Path">
+							<Value>www\lib\pageslider.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="router.js" uri="ms-resource://com.example.workshop/Files/www/lib/router.js">
+						<Candidate type="Path">
+							<Value>www\lib\router.js</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="New folder">
+					<NamedResource name="index.html" uri="ms-resource://com.example.workshop/Files/www/New%20folder/index.html">
+						<Candidate type="Path">
+							<Value>www\New folder\index.html</Value>
+						</Candidate>
+					</NamedResource>
+					<ResourceMapSubtree name="css">
+						<NamedResource name="index.css" uri="ms-resource://com.example.workshop/Files/www/New%20folder/css/index.css">
+							<Candidate type="Path">
+								<Value>www\New folder\css\index.css</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="img">
+						<NamedResource name="logo.png" uri="ms-resource://com.example.workshop/Files/www/New%20folder/img/logo.png">
+							<Candidate type="Path">
+								<Value>www\New folder\img\logo.png</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="js">
+						<NamedResource name="index.js" uri="ms-resource://com.example.workshop/Files/www/New%20folder/js/index.js">
+							<Candidate type="Path">
+								<Value>www\New folder\js\index.js</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="plugins">
+					<ResourceMapSubtree name="cordova-plugin-console">
+						<ResourceMapSubtree name="www">
+							<NamedResource name="console-via-logger.js" uri="ms-resource://com.example.workshop/Files/www/plugins/cordova-plugin-console/www/console-via-logger.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-console\www\console-via-logger.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="logger.js" uri="ms-resource://com.example.workshop/Files/www/plugins/cordova-plugin-console/www/logger.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-console\www\logger.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="cordova-plugin-device">
+						<ResourceMapSubtree name="src">
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="DeviceProxy.js" uri="ms-resource://com.example.workshop/Files/www/plugins/cordova-plugin-device/src/windows/DeviceProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\cordova-plugin-device\src\windows\DeviceProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="www">
+							<NamedResource name="device.js" uri="ms-resource://com.example.workshop/Files/www/plugins/cordova-plugin-device/www/device.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-device\www\device.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>
