@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">-->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <script type="text/javascript">
+        
+        function make(id, r, c){
+            //alert(id);
+            //var arr = [ 'X', 'O', 'X', 'O', 'X', 'O','X', 'O', 'X'];
+            
+            var st = id.split("-");
+            var index = parseInt(st[1]);
+            var j = incr();
+            var p = arrv();
+            var lol;
+            var done = 0;
+            if(id === 'rset'){
+                clearme();
+                p = clearp(p);
+                j = 0;
+            }
+            if(id !== 'rset'){
+            if(j % 2 === 1 && document.getElementById(id).value === ''){ 
+                document.getElementById(id).value = 'X';
+                lol = 'X';
+                document.getElementById(id).style.color = '#FF0000';
+                //getts(r,c,'X');
+            }
+            else {
+                if (document.getElementById(id).value === ''){
+                    document.getElementById(id).value = 'O';
+                    lol = 'O';
+                    document.getElementById(id).style.color = '#46C862'; 
+                }
+                //getts(r,c,'O');
+            }
+        if (lol === 'X' || lol === 'O'){
+
+            switch(index){
+                case 1:
+                    if (lol === 'X'){
+                        p[0][0] = -1;
+                    } else { p[0][0] = 1;}
+                    if(p[0][0] === p[0][1] && p[0][1] === p[0][2]){
+                        navigator.notification.alert("Game over! Player " + lol + " wins");
+                        //p = arrv();
+                        done = 1;
+                    }
+                    if (p[0][0] === p[1][0] && p[1][0] === p[2][0]){
+                        navigator.notification.alert("Game over! Player " + lol + " wins");
+                        //p = arrv();
+                        done = 1;
+                    }
+                    if (p[0][0] === p[1][1] && p[1][1] === p[2][2]){
+                        navigator.notification.alert("Game over! Player " + lol + " wins");
+                        //p = arrv();
+                        done = 1;
+                    }
+                    break;
+                case 2:
+                    if (lol === 'X'){
+                        p[0][1] = -1;
+                    } else { p[0][1] = 1;}
+                    if (p[0][1] === p[1][1] && p[1][1] === p[2][1]){
+                        navigator.notification.alert("Game over! Player " + lol + " wins");
+                        //p = arrv();
+                        done = 1;
+                    }
+                    if(p[0][0] === p[0][1] && p[0][1] === p[0][2]){
+                        navigator.notification.alert("Game over! Player " + lol + " wins");
+                        //p = arrv();
+                        done = 1;
+                    }
+                    break;
+                case 3:
+                    if (lol === 'X'){
+                        p[0][2] = -1;
+                    } else { p[0][2] = 1;}
+                    if(p[0][0] === p[0][1] && p[0][1] === p[0][2]){
+                        navigator.notification.alert("Game over! Player " + lol + " wins");
+                        //p = arrv();
+                        done = 1;
+                    }
+                    if (p[0][2] === p[1][1] && p[1][1] === p[2][0]){
+                        navigator.notification.alert("Game over! Player " + lol + " wins");
+                        //p = arrv();
+                        done = 1;
+                    }
+                    if (p[0][2] === p[1][2] && p[1][2] === p[2][2]){
+                        navigator.notification.alert("Game over! Player " + lol + " wins");
+                        //p = arrv();
+                        done = 1;
+                    }
+                    break;
+                case 4:
+                    if (lol === 'X'){
+                        p[1][0] = -1;
+                    } else { p[1][0] = 1;}
+                    if (p[0][0] === p[1][0] && p[1][0] === p[2][0]){
+                        navigator.notification.alert("Game over! Player " + lol + " wins");
+                        //p = arrv();
+                        done = 1;
+                    }
+                    if (p[1][0] === p[1][1] && p[1][1] === p[1][2]){
+                        navigator.notification.alert("Game over! Player " + lol + " wins");
+                        //p = arrv();
+                        done = 1;
+                    }
+                    break;
+                case 5:
+                    if (lol === 'X'){
+                        p[1][1] = -1;
+                    } else { p[1][1] = 1;}
+                    if (p[1][0] === p[1][1] && p[1][1] === p[1][2]){
+                        navigator.notification.alert("Game over! Player " + lol + " wins");
+                        //p = arrv();
+                        done = 1;
+                    }
+                    if (p[0][1] === p[1][1] && p[1][1] === p[2][1]){
+                        navigator.notification.alert("Game over! Player " + lol + " wins");
+                        //p = arrv();
+                        done = 1;
+                    }
+                    if (p[0][0] === p[1][1] && p[1][1] === p[2][2]){
+                        navigator.notification.alert("Game over! Player " + lol + " wins");
+                        //p = arrv();
+                        done = 1;
+                    }
+                    if (p[0][2] === p[1][1] && p[1][1] === p[2][0]){
+                        navigator.notification.alert("Game over! Player " + lol + " wins");
+                        //p = arrv();
+                        done = 1;
+                    }
+                    break;
+                case 6:
+                    if (lol === 'X'){
+                        p[1][2] = -1;
+                    } else { p[1][2] = 1;}
+                    if (p[1][0] === p[1][1] && p[1][1] === p[1][2]){
+                        navigator.notification.alert("Game over! Player " + lol + " wins");
+                        //p = arrv();
+                        done = 1;
+                    }
+                    if (p[0][2] === p[1][2] && p[1][2] === p[2][2]){
+                        navigator.notification.alert("Game over! Player " + lol + " wins");
+                        //p = arrv();
+                        done = 1;
+                    }
+                    break;
+                case 7:
+                    if (lol === 'X'){
+                        p[2][0] = -1;
+                    } else { p[2][0] = 1;}
+                    if (p[0][0] === p[1][0] && p[1][0] === p[2][0]){
+                        navigator.notification.alert("Game over! Player " + lol + " wins");
+                        //p = arrv();
+                        done = 1;
+                    }
+                    if (p[0][2] === p[1][1] && p[1][1] === p[2][0]){
+                        navigator.notification.alert("Game over! Player " + lol + " wins");
+                        //p = arrv();
+                        done = 1;
+                    }
+                    if (p[2][0] === p[2][1] && p[2][1] === p[2][2]){
+                        navigator.notification.alert("Game over! Player " + lol + " wins");
+                        //p = arrv();
+                        done = 1;
+                    }
+                    break; 
+                case 8:
+                    if (lol === 'X'){
+                        p[2][1] = -1;
+                    } else { p[2][1] = 1;}
+                    if (p[2][0] === p[2][1] && p[2][1] === p[2][2]){
+                        navigator.notification.alert("Game over! Player " + lol + " wins");
+                        //p = arrv();
+                        done = 1;
+                    }
+                    if (p[0][1] === p[1][1] && p[1][1] === p[2][1]){
+                        navigator.notification.alert("Game over! Player " + lol + " wins");
+                        //p = arrv();
+                        done = 1;
+                    }
+                    break; 
+                case 9:
+                    if (lol === 'X'){
+                        p[2][2] = -1;
+                    } else { p[2][2] = 1;}
+                    if (p[0][0] === p[1][1] && p[1][1] === p[2][2]){
+                        navigator.notification.alert("Game over! Player " + lol + " wins");
+                        //p = arrv();
+                        done = 1;
+                    }
+                    if (p[0][2] === p[1][2] && p[1][2] === p[2][2]){
+                        navigator.notification.alert("Game over! Player " + lol + " wins");
+                        //p = arrv();
+                        done = 1;
+                    }
+                    if (p[2][0] === p[2][1] && p[2][1] === p[2][2]){
+                        navigator.notification.alert("Game over! Player " + lol + " wins");
+                        //p = arrv();
+                        done = 1;
+                    }
+                    break; 
+            }
+            lol = '';
+            if(done === 1){
+                clearme();
+                p = clearp(p);
+                j = 0;
+            }
+            if (j === 8){ 
+                navigator.notification.alert("Game ended in a Draw, Try Play Again");
+            }
+        }
+            
+        }
+
+    }
+
+        function checkcorners(p){
+            if(p[0][0] === p[0][1] && p[0][1] === p[0][2]){
+                alert("Game over!");
+            }
+            if (p[0][0] === p[1][0] && p[1][0] === p[2][0]){
+                alert("Game over!");
+            }
+            if (p[0][0] === p[1][1] && p[1][1] === p[2][2]){
+                alert("Game over!");
+            }
+            if (p[0][2] === p[1][1] && p[1][1] === p[2][0]){
+                alert("Game over!");
+            }
+            if (p[0][2] === p[1][2] && p[1][2] === p[2][2]){
+                alert("Game over!");
+            }
+            if (p[2][0] === p[2][1] && p[2][1] === p[2][2]){
+                alert("Game over!");
+            }
+        }
+
+        function checkmiddle(p){
+            if (p[0][1] === p[1][1] && p[1][1] === p[2][1]){
+                alert("Game over!");
+            }
+            if (p[1][0] === p[1][1] && p[1][1] === p[1][2]){
+                alert("Game over!");
+            }
+        }
+
+        function clearp(p){
+            var x = 0;
+            var y = 0;
+            for(x = 0; x < 3; x++){
+                for(y = 0; y< 3; y++) {
+                    p[x][y] = 0;
+                }
+            }
+            return p;
+        }
+
+        function clearme(){
+            var t = 0;
+            for(t = 1; t <= 9; t++){
+                var mid = "Btn-" + t;
+                document.getElementById(mid).value = '';
+                
+            }
+        }
+
+        var incr = (function () {
+            var i = 1;
+            return function () {
+                return i++;
+            }
+        })();
+
+        var arrv = (function(){
+            var arr = new Array(3);
+            arr[0] = new Array(3);
+            arr[1] = new Array(3);
+            arr[2] = new Array(3);
+            var x = 0;
+            var y = 0
+            for(x = 0; x < 3; x++){
+                for(y= 0; y < 3; y++){
+                    arr[x][y] = 0;
+                }
+            }
+            return function(){
+                return arr;
+            }
+        })();
+
+        
+        </script>
+        <title>Hello World</title>
+    </head>
+    <body>
+        <div class="app">
+            <h1><font color="#FF0000">Tic</font> <font color="#46C862">Tac</font> <font color="#0000FF">Toe</font></h1>
+            <div id="deviceready">
+                <!--<p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>-->
+                <table style="background:#CCC;">
+                    <tr> 
+                        <th> <input id="Btn-1" type="button" onclick="make(this.id, 0, 0)" class="btn-style" value=""></th>
+                        <th> <input id="Btn-2" type="button" onclick="make(this.id, 0, 1)" value="" class="btn-style"> </th>
+                        <th> <input id="Btn-3" type="button" onclick="make(this.id, 0, 2)" value="" class="btn-style"> </th>
+                    </tr>
+                    <tr> 
+                        <th> <input id="Btn-4" type="button" onclick="make(this.id, 1, 0)" value="" class="btn-style"> </th>
+                        <th> <input id="Btn-5" type="button" onclick="make(this.id, 1, 1)" value="" class="btn-style"> </th>
+                        <th> <input id="Btn-6" type="button" onclick="make(this.id, 1, 2)" value="" class="btn-style"> </th>
+                    </tr>
+                    <tr> 
+                        <th> <input id="Btn-7" type="button" onclick="make(this.id, 2, 0)" value="" class="btn-style"> </th>
+                        <th> <input id="Btn-8" type="button" onclick="make(this.id, 2, 1)" value="" class="btn-style"> </th>
+                        <th> <input id="Btn-9" type="button" onclick="make(this.id, 2, 2)" value="" class="btn-style"> </th>
+                    </tr>
+                </table>
+
+                <div id="reset">
+                    <input type="button" value="Play Again" class="reset-style" id="rset" onclick="make(this.id, -1, -1)">
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <!--<script type="text/javascript" src="js/index.js"></script>-->
+    </body>
+</html>
